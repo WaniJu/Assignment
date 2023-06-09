@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Navigation Bar Example</title>
+  <title>Class vs ID Example</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
 </head>
 <body>
-  <ul style="list-style-type: none; margin: 0; padding: 0; background-color: #f2f2f2;">
-    <li style="display: inline-block;">
-      <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">Home</a>
-    </li>
-    <li style="display: inline-block;">
-      <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">About</a>
-    </li>
-    <li style="display: inline-block;">
-      <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">Services</a>
-    </li>
-    <li style="display: inline-block;">
-      <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">Contact</a>
+  <h1>Class vs ID Example</h1>
 
-/* ---------------- contoh if  no hashtag
+  <p class="highlight">This paragraph has the class "highlight".</p>
+  <p id="highlight">This paragraph has the ID " highlight".</p>
 
-      <a href="https://example.com" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">Home</a>
+  <script>
+    // JavaScript code to demonstrate the difference
+    var classElements = document.getElementsByClassName("highlight");
+    var idElement = document.getElementById("highlight");
 
+    for (var i = 0; i < classElements.length; i++) {
+      classElements[i].innerHTML = "This paragraph with class 'highlight' has been changed!";
+    }
 
-    </li>
-
-    <ol>
-        <li style="list-style-type: disc;">First item</li>
-        <li style="list-style-type: disc;">Second item</li>
-        <li style="list-style-type: disc;">Third item</li>
-      </ol>
-      
-  </ul>
+    idElement.innerHTML = "This paragraph with ID 'highlight' has been changed!";
+  </script>
 </body>
 </html>
