@@ -11,13 +11,20 @@ ul.menu {
 ul.menu li {
   display: inline-block;
 }
-
 ul.menu li a {
-  display: block;
-  padding: 10px 10px;
+  padding: 20px;
   text-decoration: none;
   color: #000;
 } 
+ul.exp {
+  list-style-type: disc; 
+}
+ul.exp li{
+  display:list-item; 
+  color: black; 
+  font-size: 18px; 
+  font-family: sans-serif;
+}
 h1{
   margin: 15px;
   color: black;
@@ -30,12 +37,19 @@ h2{
   font-size: 20px;
   font-family: sans-serif;
 }
-p{
-  margin: 15px;
+
+#home {
+  margin: 0px;
   color: black;
   font-size: 16px;
   font-family: sans-serif;
 }
-img {
-  margin: 15px;
-}
+#exps {
+  padding-left: 15px;
+  margin: 0px;
+  color: black;
+  font-size: 16px;
+  font-family: sans-serif;
+ }
+
+ 
