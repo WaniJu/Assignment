@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+  display: flex;
+  /* position: relative; */
+  margin:100px;
+   /* height: 100vh; */
+   background-color: white;
+}
+/* This is parent */
+.warmups-heading {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: burlywood;
+}
+
+/* This is child to Heading parent */
+.rectangle-white {
+  display: flex;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: -50px;
+  background-color: black;
+}
+
+.rectangle-red {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  background-color: #E82C4F;
+  opacity: 70%;
+  
+}
+
+.R-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  /* align-items: center; */
+  /* margin-left: 45%; */
+}
+
+
+h2 { 
+  width: 10px;
+  height: 10px;
+  margin-top:25px;
+  margin-left: 130px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+  /* line-height: 128%;  */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+
+}
+
+.content{
+  /* width: 100%; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: violet;
+}
+
+h3{
+  display: flex;
+  font-size: 156px;
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #FFFFFF;
+}
+
+.sub-content{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  gap:80px;
+  background-color: yellow;
+  
+}
+
+.sub-content h4 {
+  display:flex;
+  font-size: 65px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: black;
+  
+}
+
